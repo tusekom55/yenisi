@@ -37,7 +37,7 @@ export function Card({ children, className, title, subtitle }: CardProps) {
 
 interface StatsCardProps {
   title: string;
-  value: string | number;
+  value: string | number | ReactNode;
   change?: number;
   icon?: ReactNode;
   className?: string;
