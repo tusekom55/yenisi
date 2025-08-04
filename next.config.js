@@ -5,7 +5,11 @@ const nextConfig = {
   },
   images: {
     domains: ['via.placeholder.com', 'picsum.photos'],
+    unoptimized: true, // Netlify için
   },
+  output: 'export', // Static export için
+  trailingSlash: true, // Netlify routing için
+  skipTrailingSlashRedirect: true,
 }
 
 module.exports = nextConfig
